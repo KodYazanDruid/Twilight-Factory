@@ -1,0 +1,20 @@
+{
+	id: "04673A26D847473C"
+	group: ""
+	order_index: 1
+	filename: "twilight_forest"
+	title: "Twilight Forest"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "6945F929334B4FF8"
+		tasks: [{
+			id: "0D8ABE6B2C508C17"
+			type: "dimension"
+			dimension: "minecraft:overworld"
+		}]
+	}]
+}

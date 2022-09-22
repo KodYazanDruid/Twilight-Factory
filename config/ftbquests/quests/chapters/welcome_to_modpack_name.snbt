@@ -1,0 +1,105 @@
+{
+	id: "4670300E43457893"
+	group: ""
+	order_index: 0
+	filename: "welcome_to_modpack_name"
+	title: "Welcome to Twilight Factory"
+	icon: "minecraft:ender_eye"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to the Twilight Factory!"
+			x: 0.0d
+			y: 0.0d
+			shape: "octagon"
+			subtitle: "Complete this quest to start adventuring!"
+			description: ["This pack focuses around Twilight Forest, Create and Applied Energistics 2."]
+			dependency_requirement: "one_completed"
+			id: "27191BE804FF0F9D"
+			tasks: [{
+				id: "3BE39D660A811803"
+				type: "checkmark"
+				title: "Welcome to the [modpack name]"
+			}]
+		}
+		{
+			title: "Twilight Forest"
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["27191BE804FF0F9D"]
+			dependency_requirement: "one_started"
+			id: "7F8CC5E4EEDCC9C4"
+			tasks: [{
+				id: "65F1FB2D770AB969"
+				type: "dimension"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				dimension: "twilightforest:twilight_forest"
+			}]
+			rewards: [{
+				id: "5238084522F2F061"
+				type: "item"
+				item: "farmersdelight:egg_sandwich"
+				count: 8
+			}]
+		}
+		{
+			title: "Create"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["27191BE804FF0F9D"]
+			id: "59BE757D5EB9AD67"
+			tasks: [{
+				id: "091C66B7FF1D5F47"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "48A7CD8FE2B88369"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16
+			}]
+		}
+		{
+			title: "Applied Energistics 2"
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["27191BE804FF0F9D"]
+			id: "4310410A842B8648"
+			tasks: [
+				{
+					id: "347A5ADDBFFF27DE"
+					type: "item"
+					item: "ae2:sky_stone_block"
+				}
+				{
+					id: "08234B7349D9647B"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+				}
+				{
+					id: "00E354CA45EF3696"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+				}
+				{
+					id: "6591CBC1F368895A"
+					type: "item"
+					item: "ae2:logic_processor_press"
+				}
+				{
+					id: "2D3D5C20E958EADF"
+					type: "item"
+					item: "ae2:silicon_press"
+				}
+			]
+			rewards: [{
+				id: "0A1FE81A6611FC77"
+				type: "item"
+				item: "ae2:fluix_crystal"
+				count: 32
+			}]
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	id: "2D1754AFB271FC70"
+	group: ""
+	order_index: 2
+	filename: "create"
+	title: "Create"
+	icon: "create:brass_casing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
